@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    border-top: 6px solid rgb(3, 3, 154); 
+}
+nav{
+    align-items: baseline;
+    background-color:white; 
+    padding: 10px;
+    box-shadow: 0px 0px 10px gray;
+    height: 100px;
+}
+.thaliaLogo{
+    bottom: 510px;
+    left:66px;
+    position:absolute;
+
+}
+.search-container{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-top: 24px;
+    margin-right:60px;
+}
+
+.search-input{
+    width: 430px;
+    font-size: 16px;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
+    font-weight:500;
+    border: 1px solid gray;
+    border-radius: 0px;
+    padding-left: 15px;
+}
+.search-button{
+    border: 1px solid gray;
+    border-radius: 0px;
+    width: 46px;
+    background-color: rgb(8, 8, 182);
+    background-image: url("C:\Users\online\OneDrive\Desktop\Thalia\Fotot\white-search-icon-transparent-background-19.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.div-items{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 1230px; 
+}
+#img-items{
+    margin-top: -60px;
+    margin-right: -317px;
+    height:40px;
+    width:275px;
+}
+.Items{
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    font-family:Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif" ;
+    color: gray;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: -20px;
+}
+.Items li{
+    margin-right: 16px;
+    font-size: 13px;
+}
+
