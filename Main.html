@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">Thalia Online Shop | buy Books, eBooks, Toys etc. | Thalia </title> 
 
-    <link rel="stylesheet" href="Sheet1.css">
-    <link rel="website icon" type="png" href="C:\Users\online\OneDrive\Desktop\Thalia\Fotot\Untitled.png">
+    <link rel="stylesheet" href="First.css">
+    <link rel="website icon" type="png" href="C:\Users\online\OneDrive\Desktop\Fotot\Untitled.png">
 </head>
 <body>
     <nav>
-        <a href="Faqja kryesore.html"> 
-            <img class="thaliaLogo" src="C:\Users\online\OneDrive\Desktop\Thalia\Fotot\Screenshot 2023-11-16 221803.png" alt="Thalia" height="57px" width="190px">
+        <a href="Main.html"> 
+            <img class="thaliaLogo" src="C:\Users\online\OneDrive\Desktop\Fotot\Screenshot 2023-11-16 221803.png" alt="Thalia" height="57px" width="190px">
         </a>
 
         <div class="search-container">
             <input type="text" class="search-input" placeholder="Title, author, keyword, ISBN">
-            <button clas="search-button" onclick="search()" type="submit"></button>
-            
+
+            <button class="search-button" type="submit" onclick="funksioniSearch()" >
+            </button>
+
+
         </div>
 
         <div class="div-items">
-            <img id="img-items" src="C:\Users\online\OneDrive\Desktop\Thalia\Fotot\Screenshot 2023-11-18 211537.png" alt="items">
+            <img id="img-items" src="C:\Users\online\OneDrive\Desktop\Fotot\Screenshot 2023-11-18 211537.png" alt="items">
             <ul class="Items">
                 <li>On Site </li>
                 <li>My Account</li>
@@ -31,7 +34,11 @@
         </div>
     </nav>
 
-
+    <script>
+        function funksioniSearch() {
+            alert("Searching");
+        }
+    </script>
 
     
 </body>
