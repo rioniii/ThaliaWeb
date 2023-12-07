@@ -9,6 +9,7 @@
     <link rel="website icon" type="png" href="C:\Users\online\OneDrive\Desktop\Fotot\Untitled.png">
 </head>
 <body>
+    <?php echo "Hi"?>
     <nav>
         <a href="Main.html"> 
             <img class="thaliaLogo" src="C:\Users\online\OneDrive\Desktop\Fotot\Screenshot 2023-11-16 221803.png" alt="Thalia" height="10%" width="15%">

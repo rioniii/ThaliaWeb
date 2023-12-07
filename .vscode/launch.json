@@ -5,11 +5,12 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "C:\\Users\\online\\OneDrive\\Desktop\\U7.html",
+            "url": "C:\\Users\\online\\OneDrive\\Desktop\\Thalia.de\\ThaliaWeb\\Main.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
