@@ -1,17 +1,22 @@
-body{
+body {
     display: flex;
+    border-top: 6px solid rgb(3, 3, 154);
     box-sizing: border-box;
     margin: 0;
-    border-top: 6px solid rgb(3, 3, 154); 
+    flex-direction: column;
+    padding-top: 140px; 
 }
-nav{
+
+nav {
     display: flex;
     width: 100%;
     align-items: baseline;
-    background-color:white; 
-    margin-top: 100 px;
+    background-color: white;
     box-shadow: 0px 0px 10px gray;
-    height:110px;
+    height: 140px;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
 }
 .thaliaLogo{
     display: flex;
@@ -21,7 +26,7 @@ nav{
     position:fixed;
 
 }
-.search-container{
+nav .search-container{
     display: flex;
     height: 50%;
     justify-content: center;
@@ -29,9 +34,10 @@ nav{
     margin-left: 29%;
 }
 
-.search-input{
+nav .search-container .search-input{
     display: flex;
     width: 430px;
+    height: 70%;
     font-size: 16px;
     font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
     font-weight:500;
@@ -43,10 +49,11 @@ nav{
     display: flex;
     box-sizing: border-box;
     border: 1px solid gray;
-    border-radius: 0px;
+    border-radius: 0%;
     width: 46px;
+    height: 53px;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0751 1.11618C8.2726 -1.13369 3.36619 0.12492 1.11626 3.92737C-1.13368 7.72982 0.124831 12.6363 3.92724 14.8863C6.89709 16.6436 10.5404 16.2607 13.0656 14.1971L18.8686 20.0001L19.9999 18.8687L14.1962 13.065C14.447 12.7575 14.678 12.4274 14.8862 12.0755C15.9668 10.2494 16.2777 8.0689 15.7505 6.01361C15.2233 3.95832 13.9012 2.19665 12.0751 1.11618ZM2.32113 4.64031C4.17733 1.50328 8.22512 0.464928 11.3622 2.32107C12.8687 3.21246 13.9594 4.66584 14.3944 6.36145C14.8293 8.05707 14.5728 9.85601 13.6813 11.3625C11.825 14.4995 7.77719 15.5377 4.6402 13.6814C1.5032 11.8251 0.464932 7.77733 2.32113 4.64031Z' fill='white'/%3E%3C/svg%3E%0A");
-    background-color:#1a1aaa;s
+    background-color:#1a1aaa;
     background-position: 50%;
     background-repeat: no-repeat;
     border-radius: 0;
@@ -60,12 +67,6 @@ nav{
     width: 100%; 
     margin-right: 2%;
 }
-#img-items{
-    margin-top: -60px;
-    margin-right: -317px;
-    height:40px;
-    width:275px;
-}
 .Items{
     display: flex;
     flex-flow: row wrap;
@@ -74,42 +75,65 @@ nav{
     color: gray;
     font-weight: 400;
     line-height: 16px;
-    margin-top: -20px;
 }
-.Items li{
+.Items a{
     display: flex;
     margin-right: 16px;
     font-size: 13px;
+    text-decoration: none;
+    color:grey;
 }
 
 .Librat{
     display: flex;
-
     position:fixed;
     list-style-type: none;
     color: black;
     font-weight: 500;
     top: 12%;
-
     font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
 }
 
-.Librat li{
-    padding-left: 16%;
+.Librat a{
+    color:black;
+    text-decoration: none;
+    display: flex;
+    padding-left: 19%;
     justify-content: space-evenly;
-
+    flex-wrap:wrap;
+    font-size: small;
+    padding-top: 5%;
 }
 
-form{
-    border: 3px solid #1a1aaa;
-    padding:10% ;
-    position: absolute;
-    margin-top:10%;
-    margin-left: 10%;
-    font-family: 'Courier New', Courier, monospace;
-
-}
 .container label{
     display: flex;
     flex-direction: column;
+}
+
+#pic{
+    position: relative;
+    align-self: center;
+    width: 80%;
+    height: 450px;
+    margin-top: 8px;
+    display: block;
+}
+
+footer{
+    display: inline;
+    background-color: rgb(172, 167, 167);
+}
+footer p{
+    margin-left: 2%;
+    display: inline-block;
+}
+.footer ul{
+   
+}
+footer ul a{
+    margin-left:1%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    display: block;
 }
