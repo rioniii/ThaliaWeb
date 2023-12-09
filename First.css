@@ -12,7 +12,7 @@ nav {
     align-items: baseline;
     background-color: white;
     box-shadow: 0px 0px 10px gray;
-    height: 140px;
+    height: 150px;
     position: fixed;
     top: 0;
     z-index: 1000; 
@@ -49,7 +49,7 @@ nav {
     border: 1px solid gray;
     border-radius: 0%;
     width: 46px;
-    height: 53px;
+    height: 56px;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0751 1.11618C8.2726 -1.13369 3.36619 0.12492 1.11626 3.92737C-1.13368 7.72982 0.124831 12.6363 3.92724 14.8863C6.89709 16.6436 10.5404 16.2607 13.0656 14.1971L18.8686 20.0001L19.9999 18.8687L14.1962 13.065C14.447 12.7575 14.678 12.4274 14.8862 12.0755C15.9668 10.2494 16.2777 8.0689 15.7505 6.01361C15.2233 3.95832 13.9012 2.19665 12.0751 1.11618ZM2.32113 4.64031C4.17733 1.50328 8.22512 0.464928 11.3622 2.32107C12.8687 3.21246 13.9594 4.66584 14.3944 6.36145C14.8293 8.05707 14.5728 9.85601 13.6813 11.3625C11.825 14.4995 7.77719 15.5377 4.6402 13.6814C1.5032 11.8251 0.464932 7.77733 2.32113 4.64031Z' fill='white'/%3E%3C/svg%3E%0A");
     background-color:#1a1aaa;
     background-position: 50%;
@@ -84,18 +84,19 @@ nav {
     text-decoration: none;
 }
 .Items a:hover:not(.active){
-    background-color: #111;
+    background-color: #000000;
 }
 .active{
-    background-color: #111;
+    background-color: #000000;
 }
 
 
 .Librat{
-    display: flex;
+    display: inline-flex;
     position:fixed;
     list-style-type: none;
     color: black;
+    margin-left: -99px;
     font-weight: 500;
     top: 12%;
     font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif";
@@ -119,16 +120,19 @@ nav {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-top: 2%;
+  align-self: center;
 }
-  
+.slideshow-container img{
+    width: 100%;
+}
 .active {
-  background-color: #717171;
+  background-color: #000000;
 }
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.5s;
 }
 
 @keyframes fade {
@@ -237,7 +241,6 @@ margin-left: 37%;
 
     .Items li {
         margin-right: 8px; 
-       
     }
 
     .Librat {
