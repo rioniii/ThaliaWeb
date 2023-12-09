@@ -116,6 +116,26 @@ nav {
     display: flex;
     flex-direction: column;
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+  
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+  
 
 #pic{
     position: relative;

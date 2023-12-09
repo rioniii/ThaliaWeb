@@ -43,9 +43,51 @@
 
 <body>
     
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="C:\Users\online\OneDrive\Desktop\Fotot\Screenshot 2023-12-09 153651.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://aphrodite.gmanetwork.com/entertainment/articles/480_360_6_-20230913145636.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="https://t3.ftcdn.net/jpg/04/15/76/54/360_F_415765406_bNYus3fB14MOQEBTwFM6WeCmj7byxGRO.jpg" style="width:fit-content">
+    </div>
+    
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); 
+      }
+      </script>
+    <br><br><br><br>
 
-    <img id="pic" src="https://www.panoxdisplay.com/uploadfile/images/news/versionProIn.jpg"  >
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <img src="C:\Users\online\OneDrive\Desktop\Fotot\Partners.png">
 
@@ -95,9 +137,9 @@
     </div>
     <p id="ps">Copyright © 2023 Thalia DE. All rights reserved.</p>
     <br>
-
-
     </footer>
       
 </body>
+
+
 </html>
