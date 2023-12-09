@@ -1,6 +1,5 @@
 body {
     display: flex;
-    border-top: 6px solid rgb(3, 3, 154);
     box-sizing: border-box;
     margin: 0;
     flex-direction: column;
@@ -26,15 +25,14 @@ nav {
     position:fixed;
 
 }
-nav .search-container{
+.search-container{
     display: flex;
     height: 50%;
     justify-content: center;
-    margin-top: 2%;
     margin-left: 29%;
 }
 
-nav .search-container .search-input{
+.search-input{
     display: flex;
     width: 430px;
     height: 70%;
@@ -61,28 +59,37 @@ nav .search-container .search-input{
     cursor: pointer;
     outline: none;
 }
-.div-items{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%; 
-    margin-right: 2%;
-}
+
 .Items{
-    display: flex;
-    flex-flow: row wrap;
-    list-style-type: none;
-    font-family:Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif" ;
-    color: gray;
     font-weight: 400;
     line-height: 16px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    margin-left:20px;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: #333;
+    font-family:Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,"sans-serif" ;
+    
 }
-.Items a{
-    display: flex;
-    margin-right: 16px;
-    font-size: 13px;
+.Items li{
+    float: left;
+}
+.Items li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color:grey;
 }
+.Items a:hover:not(.active){
+    background-color: #111;
+}
+.active{
+    background-color: #111;
+}
+
 
 .Librat{
     display: flex;
@@ -114,36 +121,70 @@ nav .search-container .search-input{
     position: relative;
     align-self: center;
     width: 80%;
-    height: 450px;
-    margin-top: 8px;
+    height: 400px;
+    margin-top: 15px;
     display: block;
 }
 
 footer{
     display: inline;
-    background-color: rgb(172, 167, 167);
+    background-color: #DFDFDF;
+    font-family: Circular,Segoe UI,Candara,Bitstream Vera Sans,DejaVu Sans,Trebuchet MS,Verdana,Verdana Ref,sans-serif;
+    font-size: 15px;
+    width: 100%;
 }
-footer p{
-    margin-left: 2%;
-    display: inline-block;
+.AboutUs p{
+    margin-left: 70px;
 }
-.footer ul{
-   
+.AboutUs a{
+    margin-left: 30px;
 }
+
 footer ul a{
     margin-left:1%;
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: #111;
     display: block;
 }
+
+.Service{
+    margin-top:-210px;
+    margin-left: 350px;
+}
+.Service p{
+    margin-left: 49px;
+}
+.Shopp{
+    margin-top: -210px;
+    margin-left: 750px;
+    
+}
+.Shopp p{
+    margin-left: 45px;
+}
+.footer_elements{
+  margin-left: 10%;
+}
+
+.SocialMedias{
+    background-color: #dfdfdd;
+    width: 100%;
+}
+.SocialMedias img{
+    margin-top:20px ;
+    height: 70px;
+    width:200px;
+    margin-left: 190px;
+}
+
+
 @media only screen and (max-width: 768px) {
     .search-container {
         margin-top: 3%; 
         margin-left: 13%;
         width: 30%;
         height: 20%;
-
     }
 
     .search-button {
